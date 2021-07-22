@@ -14,7 +14,7 @@
     "watch-server-hmr": "webpack -w --config webpack.serverHMR.js",
     "#dev-all": "Dev mode: watch for server changes and start UI server",
     "dev-all": "rm dist/* && npm run watch-server-hmr & sleep 5 && npm start",
-    "heroku-postbuild": "npm rum compile"
+    "heroku-postbuild": "npm rum compile && ln -fs ./node_modules/bootstrap/dist public/bootstrap"
   },
   "repository": {
     "type": "git",
